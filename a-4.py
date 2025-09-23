@@ -10,8 +10,8 @@ members = ["Bob", "Tom", "Ken"]
 
 # 回答
 # "Bob" と "Tom" を取得して出力
-print(members[0:2])
+print(members[0:2])    #出力結果 ['Bob', 'Tom']
 
 # "Bob" と "Tom" を取得して、それぞれ1件ずつ、"Bob" と "Tom"を出力
-print(members[0])
-print(members[1])
+print(members[0])    #出力結果 Bob
+print(members[1])    #出力結果 Tom
