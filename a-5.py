@@ -4,4 +4,5 @@
 bob_info = ["Bob", "Dylan", 79]
 
 
-print()
+print(f"Name:{bob_info[0]} {bob_info[1]} age: {bob_info[2]} ")
+# f文字列を使って埋め込む   print(f"文字列{コード}")
