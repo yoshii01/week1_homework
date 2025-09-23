@@ -5,7 +5,13 @@
     # Name: Tom, Age: 59
     # Name: Ken, Age: 61
 
-users_info = [["Bob", 79],
-              ["Tom", 59],
-              ["Ken", 61]]
+from typing import ItemsView
 
+
+users_info = {["Bob", 79],
+              ["Tom", 59],
+              ["Ken", 61]}
+
+
+for users_info in users_info:
+    print(users_info)
