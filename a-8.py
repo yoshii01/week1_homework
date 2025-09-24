@@ -17,5 +17,3 @@ for user in users_info:
     age = user[1]
     print(f"Name: {name}, Age: {age}")
 
-for key, value in users_info.items():
-    print(key, value)
