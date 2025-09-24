@@ -8,10 +8,14 @@
 from typing import ItemsView
 
 
-users_info = {["Bob", 79],
-              ["Tom", 59],
-              ["Ken", 61]}
+users_info = [["Bob", 79], ["Tom", 59], ["Ken", 61]]
 
 
-for users_info in users_info:
-    print(users_info)
+# ネスト構造からを並列構造に変換。それぞれnameとageに代入し出力
+for user in users_info:
+    name = user[0]
+    age = user[1]
+    print(f"Name: {name}, Age: {age}")
+
+for key, value in users_info.items():
+    print(key, value)
