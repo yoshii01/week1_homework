@@ -43,7 +43,7 @@ horizontal = int(input("行数を入力してください: "))
 vertical = int(input("列数を入力してください: "))
 
 
-for h in range(1, horizontal):         # 1から9までの行(横軸) h   horizontal
-    for v in range(1, vertical):     # 1から9までの列(縦軸) v   vertical二重ループの内側のカウンター
+for h in range(1, horizontal +1):         # 1から9までの行(横軸) h   horizontal
+    for v in range(1, vertical +1):     # 1から9までの列(縦軸) v   vertical二重ループの内側のカウンター
         print(h * v, end=" ")  # i✕jをし、行内は改行しないでスペース" "で連結,各行で改行
     print()

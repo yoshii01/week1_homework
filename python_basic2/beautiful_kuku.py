@@ -19,3 +19,26 @@
 # 1 x 7 =  7 | 2 x 7 = 14 | 3 x 7 = 21 | 4 x 7 = 28 | 5 x 7 = 35 | 6 x 7 = 42 | 7 x 7 = 49 | 8 x 7 = 56 | 9 x 7 = 63 | 
 # 1 x 8 =  8 | 2 x 8 = 16 | 3 x 8 = 24 | 4 x 8 = 32 | 5 x 8 = 40 | 6 x 8 = 48 | 7 x 8 = 56 | 8 x 8 = 64 | 9 x 8 = 72 | 
 # 1 x 9 =  9 | 2 x 9 = 18 | 3 x 9 = 27 | 4 x 9 = 36 | 5 x 9 = 45 | 6 x 9 = 54 | 7 x 9 = 63 | 8 x 9 = 72 | 9 x 9 = 81 | 
+
+#まだ理解できていない…
+
+horizontal = int(input("行数を入力してください: "))
+vertical = int(input("列数を入力してください: "))
+
+# 掛け算表の出力
+for h in range(1, horizontal +1):         # 1から9までの行(横軸) h   horizontal
+    for v in range(1, vertical +1):     # 1から9までの列(縦軸) v   vertical二重ループの内側のカウンター
+        result = h * v
+
+        if result < 10:
+            print(f"{h} x {v} =  {result} |", end=' ')
+
+        elif result < 100:
+            print(f"{h} x {v} = {result} |", end=' ')
+
+        else:
+            print(f"{h} x {v} = {result} |", end=' ')
+
+    print()
+
+
