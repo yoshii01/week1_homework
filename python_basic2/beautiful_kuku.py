@@ -27,18 +27,9 @@ vertical = int(input("列数を入力してください: "))
 
 # 掛け算表の出力
 for h in range(1, horizontal +1):         # 1から9までの行(横軸) h   horizontal
-    for v in range(1, vertical +1):     # 1から9までの列(縦軸) v   vertical二重ループの内側のカウンター
-        result = h * v
-
-        if result < 10:
-            print(f"{h} x {v} =  {result} |", end=' ')
-
-        elif result < 100:
-            print(f"{h} x {v} = {result} |", end=' ')
-
-        else:
-            print(f"{h} x {v} = {result} |", end=' ')
-
+    for v in range(1, vertical +1):       # 1から9までの列(縦軸) v   vertical二重ループの内側のカウンター
+        result = h * v                    # 掛け算の答えに変数を与える
+        print(f"{h} x {v} =  {result} |", end=' ') # f文で表示させる内容を表す
     print()
 
 
