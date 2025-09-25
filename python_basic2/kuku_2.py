@@ -36,3 +36,14 @@
 # 10 20 30 40 50 60 70 80 90 100 110 120 
 # 11 22 33 44 55 66 77 88 99 110 121 132 
 # 12 24 36 48 60 72 84 96 108 120 132 144 
+
+
+
+horizontal = int(input("行数を入力してください: "))
+vertical = int(input("列数を入力してください: "))
+
+
+for h in range(1, horizontal):         # 1から9までの行(横軸) h   horizontal
+    for v in range(1, vertical):     # 1から9までの列(縦軸) v   vertical二重ループの内側のカウンター
+        print(h * v, end=" ")  # i✕jをし、行内は改行しないでスペース" "で連結,各行で改行
+    print()
