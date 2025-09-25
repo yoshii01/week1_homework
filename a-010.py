@@ -6,7 +6,17 @@
 import random
 
 dice = [1, 2, 3, 4, 5, 6]
-# dice = [1, 2, 3, 4, 5, 6]  # 結果リストをまとめて定義する
+
+idx = random.randint(1, 5)
+print(dice[idx]) 
 
 
-print(random.choice(dice)) # 1から6の整数をランダムに出力する
+
+
+# import random
+
+# dice = [1, 2, 3, 4, 5, 6]
+# # dice = [1, 2, 3, 4, 5, 6]  # 結果リストをまとめて定義する
+
+
+# print(random.choice(dice)) # 1から6の整数をランダムに出力する
